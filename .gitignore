@@ -9,7 +9,6 @@ my_modules
 test
 
 #compiled
-dist
 
 .env
 *.env
