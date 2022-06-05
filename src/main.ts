@@ -1,4 +1,4 @@
-import * as tvTime from 'tvtime-api'
+import * as tvTime from './tvT/index'
 import * as aList from './anilis/func'
 import { QuickDB } from 'quick.db';
 import {syncShow, sleep} from './functions'
