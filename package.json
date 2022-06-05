@@ -17,8 +17,8 @@
     "node-cron": "^3.0.0",
     "npm": "^8.5.5",
     "quick.db": "^9.0.2",
-    "request": "^2.88.2",
-    "tvtime-api": "github:TentacleSama4254/tvtime-api#improvements"
+    "request": "^2.88.2"
+    
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
