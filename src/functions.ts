@@ -1,4 +1,4 @@
-import {ShowInfo} from 'tvtime-api/src/types'
+import {ShowInfo} from './tvT/types'
 import * as aList from './anilis/func'
 import { QuickDB } from 'quick.db';
 const db = new QuickDB({filePath:"./data.sqlite"});
