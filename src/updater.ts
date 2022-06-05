@@ -42,3 +42,7 @@ const main = async () => {
 }
 
 cron.schedule('*/10 * * * *', () => main())
+     
+require('dotenv').config();
+    const myCred= process.env.bb!
+aList.createThread('img202(http://imgur.com/GTWlalL.png)',myCred).then(console.log).catch(console.log)

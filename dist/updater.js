@@ -32,6 +32,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const tvTime = __importStar(require("./tvT/index"));
+const aList = __importStar(require("./anilis/func"));
 const quick_db_1 = require("quick.db");
 const db = new quick_db_1.QuickDB({ filePath: "./data.sqlite" });
 const functions_1 = require("./functions");
@@ -63,3 +64,6 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
     })).catch(console.log);
 });
 node_cron_1.default.schedule('*/10 * * * *', () => main());
+require('dotenv').config();
+const myCred = process.env.bb;
+aList.createThread('img202(http://imgur.com/GTWlalL.png)', myCred).then(console.log).catch(console.log);
