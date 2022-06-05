@@ -1,7 +1,7 @@
 {  "scripts": {
 
   "main": "node dist/updater.js",
-  "preinstall": "npm run build",
+  "postinstall": "npm run build",
   "build": "tsc -p .",
   "prepublish": "npm run build",
   "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
