@@ -2,8 +2,7 @@ import {ShowInfo} from './tvT/types'
 import * as aList from './anilis/func'
 import { QuickDB } from 'quick.db';
 const db = new QuickDB({filePath:"./data.sqlite"});
-const q = require('../my_modules/quick.db')
-const db2 = q('./local.sqlite')
+
 import * as tvTime from './tvT/index'
 import {SeasonWatch} from './types'
 

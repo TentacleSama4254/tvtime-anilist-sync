@@ -32,8 +32,6 @@ exports.sleep = exports.syncShow = exports.matchSeasons = exports.getWatched = v
 const aList = __importStar(require("./anilis/func"));
 const quick_db_1 = require("quick.db");
 const db = new quick_db_1.QuickDB({ filePath: "./data.sqlite" });
-const q = require('../my_modules/quick.db');
-const db2 = q('./local.sqlite');
 const tvTime = __importStar(require("./tvT/index"));
 function getWatched(tvRes) {
     return __awaiter(this, void 0, void 0, function* () {

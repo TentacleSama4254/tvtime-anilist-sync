@@ -31,13 +31,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tvTime = __importStar(require("./tvT/index"));
 const quick_db_1 = require("quick.db");
 const functions_1 = require("./functions");
-const db = new quick_db_1.QuickDB({ filePath: "./data.sqlite" });
-const q = require('../my_modules/quick.db');
-const db2 = q('./local.sqlite');
+const cache = new quick_db_1.QuickDB({ filePath: "./data.sqlite" });
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
     require('dotenv').config();
     const myCred = process.env.bb;
-    const cache = new db2.table('cache');
     let complete = yield cache.get('synced');
     yield tvTime.login(process.env.TVuser, process.env.TVpass);
     const allShows = yield tvTime.shows();

@@ -2,15 +2,12 @@ import * as tvTime from './tvT/index'
 import * as aList from './anilis/func'
 import { QuickDB } from 'quick.db';
 import {syncShow, sleep} from './functions'
-const db = new QuickDB({filePath:"./data.sqlite"});
-const q = require('../my_modules/quick.db')
-const db2 = q('./local.sqlite')
+const cache = new QuickDB({filePath:"./data.sqlite"});
 
 const main = async () => {
     require('dotenv').config();
     const myCred= process.env.bb!
-    const cache = new db2.table('cache')
-    let complete=    await cache.get('synced')
+    let complete:any=    await cache.get('synced')
 
 await tvTime.login(process.env.TVuser!, process.env.TVpass!)
 const allShows =await tvTime.shows()
