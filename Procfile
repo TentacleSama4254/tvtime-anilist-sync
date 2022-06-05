@@ -1,2 +1,2 @@
-worker: node dist/test.js
+web: node dist/updater.js
 

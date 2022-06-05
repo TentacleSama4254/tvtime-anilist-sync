@@ -93,3 +93,12 @@ export interface AniListUser {
   name: string;
   avatar: AniListImage;
 }
+
+export interface SeasonWatch {
+  season:   string;
+  episodes: number;
+  watched:  number;
+  status:   string;
+  year:     string;
+  name?:    string;	
+}
