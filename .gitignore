@@ -1,0 +1,18 @@
+# npm package
+node_modules
+my_modules
+
+# log
+*.log
+
+# test
+test
+
+#compiled
+dist
+
+.env
+*.env
+
+#db
+local.sqlite

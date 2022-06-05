@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "better-sqlite3": "^7.5.3",
+    "dotenv": "^16.0.0",
+    "i": "^0.3.7",
+    "lodash": "^4.17.21",
+    "npm": "^8.5.5",
+    "request": "^2.88.2",
+    "tvtime-api": "github:TentacleSama4254/tvtime-api#improvements"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/node-fetch": "^2.6.1",
+    "husky": "^8.0.1"
+  }
+}
