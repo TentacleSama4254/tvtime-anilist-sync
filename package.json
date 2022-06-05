@@ -1,8 +1,6 @@
 {  "scripts": {
 
   "main": "node dist/updater.js",
-  "postinstall": "npm run build",
-  "build": "tsc -p .",
   "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
 },
 "engines": {
