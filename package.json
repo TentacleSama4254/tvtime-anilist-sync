@@ -6,6 +6,9 @@
   "prepublish": "npm run build",
   "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
 },
+"engines": {
+  "node": "<=17.11.0"
+},
   "dependencies": {
     "axios": "^0.27.2",
     "better-sqlite3": "^7.5.3",
